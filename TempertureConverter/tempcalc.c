@@ -24,3 +24,20 @@ else{
   printf("");
 }
 }
+else if (unit == 'F'){
+  printf("Chosen unit Fahrenheit\n");
+   printf("What is the temperture?");
+scanf("%lf", &temp);
+printf("Do you want to convert the temperture? (Y) (N) ");
+scanf(" %c", &answer);
+answer = toupper(answer);
+if(answer == 'Y'){
+temp = (temp - 32) * 5/9;
+
+printf("Converted temp is: %lf", temp);
+}
+else{
+  printf("");
+}
+}
+}
